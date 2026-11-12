@@ -6,8 +6,6 @@
 
 A compound **fax-to-email API** that bundles an inbound fax subscription window, delivery to your email, and optional OCR text extraction into one HTTP endpoint. Useful when you're expecting a fax back from a bank, court, hospital, or government office — and you don't want to rent a dedicated fax number and monthly plan just for this one document. Built on Sats4AI's L402 payment protocol.
 
-Search terms: *fax to email api, receive fax online, receive fax api, online fax number, virtual fax number, efax alternative api, myfax alternative, faxburner alternative, pay per fax received, inbound fax api, mcp fax tool, l402 fax*.
-
 ---
 
 ## What makes it different
@@ -182,36 +180,3 @@ Not this time? That's cool too. We've been there. A star on the repo is a free h
 ## License
 
 MIT — see [LICENSE](LICENSE).
-
-<details>
-<summary>Repository setup (for maintainers)</summary>
-
-```bash
-gh repo create cnghockey/fax-to-email --public --source=. \
-  --description "Fax-to-email API — open a 24h receive window, get faxes delivered to your inbox with optional OCR. Pay with Bitcoin Lightning, no subscription. MCP-native. Alternative to eFax, MyFax, SRFax, FaxBurner." \
-  --homepage "https://sats4ai.com" \
-  --push
-
-gh repo edit cnghockey/fax-to-email \
-  --add-topic fax \
-  --add-topic fax-to-email \
-  --add-topic receive-fax \
-  --add-topic online-fax-number \
-  --add-topic virtual-fax-number \
-  --add-topic inbound-fax \
-  --add-topic fax-api \
-  --add-topic ocr \
-  --add-topic pay-per-use \
-  --add-topic no-signup \
-  --add-topic mcp \
-  --add-topic model-context-protocol \
-  --add-topic l402 \
-  --add-topic lightning-network \
-  --add-topic bitcoin \
-  --add-topic email \
-  --add-topic efax-alternative \
-  --add-topic myfax-alternative \
-  --add-topic faxburner-alternative
-```
-
-</details>
