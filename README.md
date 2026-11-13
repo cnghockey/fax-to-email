@@ -44,7 +44,7 @@ curl -i -X POST https://sats4ai.com/api/l402/receive-fax \
   -H "Content-Type: application/json" \
   -d '{
     "email": "alice@example.com",
-    "from_number": "+14155552671",
+    "from_number": "+14155550123",
     "ocr": false
   }'
 
@@ -61,11 +61,11 @@ curl -X POST https://sats4ai.com/api/l402/receive-fax \
   -d '{ ...same body... }'
 
 # Response:
-#   { "status": "subscribed", "subscription_id": "...", "from_number": "+14155552671",
+#   { "status": "subscribed", "subscription_id": "...", "from_number": "+14155550123",
 #     "email": "alice@example.com", "ocr": false, "expires_at": "2026-04-22T18:00:00Z",
 #     "forward_to_number": "+13202991523" }
 
-# Step 4: Ask your sender to dial +13202991523 from +14155552671.
+# Step 4: Ask your sender to dial +13202991523 from +14155550123.
 #         When the fax arrives, it lands in alice@example.com.
 ```
 
@@ -139,7 +139,7 @@ See [examples/](examples/) for runnable scripts in curl, Python, and TypeScript.
 | Field | Required | Example |
 |---|---|---|
 | `email` | yes | `"alice@example.com"` |
-| `from_number` | yes | `"+14155552671"` (expected sender caller ID, last 10 digits matched) |
+| `from_number` | yes | `"+14155550123"` (expected sender caller ID, last 10 digits matched) |
 | `ocr` | no | `true` — attach searchable text file (+200 sats) |
 
 Full JSON Schema: [sats4ai.com/api/openapi.json](https://sats4ai.com/api/openapi.json) (tag: `receive-fax`).

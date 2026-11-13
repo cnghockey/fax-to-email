@@ -4,8 +4,8 @@
  * No dependencies — uses built-in fetch and readline.
  *
  * Usage:
- *   npx tsx typescript.ts --email alice@example.com --from-number +14155552671
- *   npx tsx typescript.ts --email alice@example.com --from-number +14155552671 --ocr
+ *   npx tsx typescript.ts --email alice@example.com --from-number +14155550123
+ *   npx tsx typescript.ts --email alice@example.com --from-number +14155550123 --ocr
  */
 
 import * as readline from "node:readline/promises";
@@ -76,7 +76,7 @@ function parseArgs(): SubscribeBody {
     const email = get("--email");
     const fromNumber = get("--from-number");
     if (!email || !fromNumber) {
-        console.error("Usage: --email alice@example.com --from-number +14155552671 [--ocr]");
+        console.error("Usage: --email alice@example.com --from-number +14155550123 [--ocr]");
         process.exit(1);
     }
     return {

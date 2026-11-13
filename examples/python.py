@@ -5,8 +5,8 @@ Requires:
     pip install requests
 
 Usage:
-    python python.py --email alice@example.com --from-number +14155552671
-    python python.py --email alice@example.com --from-number +14155552671 --ocr
+    python python.py --email alice@example.com --from-number +14155550123
+    python python.py --email alice@example.com --from-number +14155550123 --ocr
 """
 
 from __future__ import annotations

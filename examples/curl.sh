@@ -7,8 +7,8 @@
 #   - any Lightning wallet that can pay a bolt11 and return a preimage
 #
 # Usage:
-#   EMAIL="alice@example.com" FROM_NUMBER="+14155552671" ./curl.sh
-#   EMAIL="alice@example.com" FROM_NUMBER="+14155552671" OCR=true ./curl.sh
+#   EMAIL="alice@example.com" FROM_NUMBER="+14155550123" ./curl.sh
+#   EMAIL="alice@example.com" FROM_NUMBER="+14155550123" OCR=true ./curl.sh
 
 set -euo pipefail
 
